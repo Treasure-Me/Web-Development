@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rock-Paper-Scissors</title>
+    </head>
+    <body></body>
+        <button onclick="
+            computerMove = computerMoves();
+
+            if (computerMove === 'rock'){
+                result = 'tie';
+            }else if (computerMove === 'paper'){
+                result = 'You lose';
+            }else if (computerMove === 'scissors'){
+                result = 'You win';
+            }
+
+            alert(`You picked rock, computer picked ${computerMove}. ${result}`)
+        ">Rock</button>
+        <button onclick="
+            computerMove = computerMoves();
+            let result2 = '';
+
+            if (computerMove === 'rock'){
+                result2 = 'You win';
+            }else if (computerMove === 'paper'){
+                result2 = 'tie';
+            }else if (computerMove === 'scissors'){
+                result2 = 'You lose';
+            }
+
+            alert(`You picked paper, computer picked ${computerMove}. ${result2}`)"
+            >Paper</button>
+        <button onclick="
+            computerMove = computerMoves();
+            let result3 = '';
+
+            if (computerMove === 'rock'){
+                result3 = 'You lose';
+            }else if (computerMove === 'paper'){
+                result3 = 'You win';
+            }else if (computerMove === 'scissors'){
+                result3 = 'tie';
+            }
+
+            alert(`You picked scissors, computer picked ${computerMove}. ${result3}`)"
+            >Scissors</button>
+        <script>
+            let computerMove = '';
+
+            function computerMoves(){
+                const randomNumber = Math.random();
+
+                if (randomNumber >= 0 && randomNumber < 1/3){
+                    computerMove = 'rock';
+                }else if (randomNumber >= 1/3 && randomNumber < 2/3){
+                    computerMove = 'paper'
+                }else if (randomNumber>=2/3 && randomNumber<1){
+                    computerMove = 'scissors'
+                }
+
+                return computerMove
+            }
+        </script>
+    </body>
+</html>

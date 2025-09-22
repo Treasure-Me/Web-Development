@@ -1,0 +1,42 @@
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.thumbnail {
+    width: 275px;
+    display: block;
+}
+
+.search-bar {
+    font-size: 20px;
+}
+
+.thumbnail1 {
+    width: 200px;
+    border-radius: 20px;
+    margin-right: 100px;
+}
+
+.thumbnail2 {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.thumbnail3 {
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+}
+
+.video-title {
+    width:310px;
+}
+
+.Author,
+.video-details {
+    display: inline-block;
+}
